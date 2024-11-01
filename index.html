@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-2</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="string-reverse">
+            <div class="title">
+                <button id="reverse-string-btn" onclick="displayReverString()">Reverse your String here</button>
+            </div>
+            <div id="str-reverse-input-field">
+                <input type="text" placeholder="Enter your text" id="input-string">
+                <button onclick="reverseString()">Reverse String</button>
+                <h4 id="reverse-string"></h4>
+            </div>
+        </div>
+
+        <div class="check-palindrome">
+            <div class="title">
+                <button id="check-palindrome-btn" onclick="displayPalinDrome()">Check Palindrome Sequence</button>
+            </div>
+            <div id="check-palindrome-input-field">
+                <input type="number" placeholder="Enter the number" id="input-number">
+                <button onclick="checkPalindrome()">Check Palindrome</button>
+                <h4 id="palindrome-result"></h4>
+            </div>
+        </div>
+        <div class="total-bill">
+            <div class="title">
+                <button id="generate-bill-btn" onclick="displayBill()">Generate bill</button>
+            </div>
+            <div id="generate-bill-input-field">
+                <div>
+                    <label for="bill-amt">Enter your amount</label>
+                    <input id="bill-amt" type="number" placeholder="Enter your amount" id="input-number">
+                </div>
+                <div>
+                    <label for="tip-percentage">Enter percentage for tip</label>
+                    <input id="tip-percentage" type="number" placeholder="Enter your percentage" id="input-number">
+                </div>
+                <button onclick="generateAmount()">Generate bill</button>
+                <h4 id="bill-amount"></h4>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

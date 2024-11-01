@@ -1,0 +1,70 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(-150deg, #f5f7fa, #e7cac6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 100px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.string-reverse, .check-palindrome, .total-bill {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.string-reverse:hover, .check-palindrome:hover, .total-bill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+#reverse-string-btn, #check-palindrome-btn, .string-reverse button, .check-palindrome button, #generate-bill-btn, button{
+    background-color: #E96B6B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+input[type="text"], input[type="number"] {
+    width: fit-content;
+    padding: 10px;
+    margin: 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #E96B6B;
+    outline: none;
+}
+
+.title {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+#str-reverse-input-field, #check-palindrome-input-field, #generate-bill-input-field{
+    display: none;
+}
